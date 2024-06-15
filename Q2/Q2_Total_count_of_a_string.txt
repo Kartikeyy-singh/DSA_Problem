@@ -1,0 +1,20 @@
+You are given a string consisting of lowercase English alphabets. Your task is to compute the sum of all distinct characters in every possible substring of the string.
+
+Since the answer may be large, return it modulo 10^9 + 7.
+
+Example 1:
+Input: str = "abcd"
+output: 20
+explanation: substring of length 1:"a","b","c","d" : 1+1+1+1 = 4
+	     substring of length 2:"ab","bc","cd"  : 2+2+2 = 6
+	     substring of length 3:"abc","bcd"     : 3+3 = 6
+	     substring of length 4:"abcd"          : 4
+	                                      total: 4+6+6+4 = 20
+Example 2:
+Input: str = "xyyzx"
+output: 28
+
+
+Constraints:
+1 <= str.length <= 105
+str consists of lowercase English letters.

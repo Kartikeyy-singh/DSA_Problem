@@ -1,0 +1,28 @@
+You are given an array consisting of positive integers.
+
+A division of the array into one or more contiguous subarrays is considered "beautiful" if no two subarrays within a division contain the same number or in other word same numbers has to be in same subarray in division.
+
+you have to return the total number of "beautiful" divison of array.
+
+Since the answer may be large, return it modulo 10^9 + 7.
+
+Example 1:
+Input: arr = [1,2,3]
+Output: 4
+Explanation: The 4 possible beautiful divisions are: ([1], [2], [3]), ([1], [2,3]), ([1,2], [3]) ([1,2,3]).
+
+Example 2:
+
+Input: arr = [2,2,2]
+Output: 1
+Explanation: The only possible beautiful divisions is: ([2,2,2]).
+
+Example 3:
+
+Input: arr = [2,1,2,4]
+Output: 2
+Explanation: The 2 possible beautiful divisions are: ([2,1,2], [4]) and ([2,1,2,4]).
+
+Constraints:
+1 <= arr.length <= 10^5
+1 <= arr[i] <= 10^9
